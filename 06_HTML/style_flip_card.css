@@ -1,0 +1,49 @@
+.kotak-luar {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    perspective: 1000px;
+}
+
+.kartu-berputar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.kotak-luar:hover .kartu-berputar {
+    transform: rotateY(180deg);
+}
+
+.sisi-depan, .sisi-belakang {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sisi-depan {
+    background: orange;
+    box-shadow: 2px -2px 6px red,
+                -6px 6px 12px gold;
+    color: white;
+}
+
+.sisi-belakang {
+    background: gold;
+    box-shadow: 2px -2px 6px red,
+                -6px 6px 12px orange;
+    color: white;
+    transform: rotateY(180deg);
+}

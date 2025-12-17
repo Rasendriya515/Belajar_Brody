@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tombol-induk {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.tombol-induk button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.teks-info {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;    
+    transform: translateX(-50%);
+    width: 120px; 
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 240, 212);
+    border: 1px solid black;
+    color: orange; 
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.tombol-induk:hover .teks-info {
+    visibility: visible; opacity: 1;
+}
