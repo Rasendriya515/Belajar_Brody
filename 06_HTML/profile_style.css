@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'BBH Bogle';
+    src: url('assets/fonts/BBHBogle-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Google Sans Flex';
+    src: url('assets/fonts/Google-Sans-Flex.ttf') format('truetype');
+}
+
+body {
+    background-color: #222;
+}
+
+#judul {
+    text-align: center;
+    color: goldenrod;
+    background-color: #0d1b2a;
+    filter: drop-shadow(2px 3px 3px rgba(255, 120, 17, 0.676));
+    padding: 5px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    border-width: medium;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#fullstack-dev {
+    font-family: 'BBH Bogle', sans-serif;
+    font-size: large;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-stroke: 1px #5e3b1f;
+    color: rgb(249, 230, 181);
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.3));
+    margin-left: 30px;
+    transition: transform 0.3s;
+}
+
+#fullstack-dev:hover {
+    transform: scale(1.1);
+}
+
+#contact-toggle {
+    display: none;
+}
+
+#contact-toggle:checked ~ .contact-detail{
+    max-height: 200px;
+    opacity: 1;
+}
+
+.card-info h1 {
+    font-family: 'BBH Bogle', sans-serif;
+    background: linear-gradient(to right, goldenrod, #fff1a4, goldenrod);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    -webkit-text-stroke: 0.5px #5e3b1f;
+    color: transparent;
+    filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.3));
+    margin-left: 30px;
+    transition: transform 0.3s;
+}
+
+.card-info:hover h1 {
+    transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    background-color: goldenrod;
+    width: 550px;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+    box-shadow: 2px -2px 6px goldenrod,
+                -2px 2px 6px goldenrod;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #5e3b1f;
+    border-radius: 5%;
+    transition: transform 0.5s;
+}
+
+.card-image:hover img {
+    transform: scale(1.05);
+}
+
+.btn-contact {
+    display: inline-block;
+    font-family: 'Google Sans Flex';
+    font-weight: 400;
+    color: azure;
+    background-color: rgb(160, 114, 0);
+    font-size: 12px;
+    border: 1px solid rgb(160, 114, 0);
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 73px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: rgb(87, 63, 0);
+    transform: scale(1.05);
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+    background-color: rgb(160, 114, 0);
+    border: 1px solid rgb(160, 114, 0);
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.contact-detail p {
+    font-family: 'Google Sans Flex';
+    font-size: small;
+    margin: 5px 0;
+    text-align: center;
+    color: azure;
+}
+
+@media screen and (max-width: 768px) {
+
+    #fullstack-dev {
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .card-info h1 {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-image {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .btn-contact {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .contact-detail {
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
