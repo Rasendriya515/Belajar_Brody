@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/images/BMW\ M8\ GTE\ \'19.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+body img {
+    width: 110px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu h3 {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Oswald';
+    color: white;
+    margin-left: 40px;
+}
+
+.bmw-m8-container {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+}
+
+.tagline-bmw-m8 {
+    font-family: 'Russo One';
+    color: white;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.bmw-m8-gte-button {
+    border: 3px solid white;
+    border-radius: 8px;
+    background: transparent;
+    font-family: 'Russo One';
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    width: fit-content;
+    transition: ease, transform 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bmw-m8-gte-button:hover {
+    transform: scale(1.1);
+}

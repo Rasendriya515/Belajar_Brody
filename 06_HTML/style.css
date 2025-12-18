@@ -5,9 +5,9 @@ body {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 300%;
+    font-size: 400%;
     text-align: center;
-    background: linear-gradient(to right, brown, #ffe655, brown);
+    background: linear-gradient(to right, rgb(76, 13, 13), #b6a43d, rgb(68, 13, 13));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
