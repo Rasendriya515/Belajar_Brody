@@ -93,6 +93,7 @@ body {
     padding: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    text-decoration: none;
 }
 
 .bmw-m8-text-spec:hover {
