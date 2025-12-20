@@ -15,21 +15,20 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-color: #0e0e0e; 
-    background-image: 
-        linear-gradient(to right, rgba(14,14,14,0) 50%, #0e0e0e 100%),
-        url("../../assets/images/BMW M8 GTE '19 (2).jpg");
-    background-size: 85% auto; 
-    background-position: left 35%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 100%), 
+                      url("../../assets/images/BMW\ M8\ GTE\ \'19\ \(7\).jpg");
+    background-size: 100% auto;
+    background-position: center 113%;
     background-repeat: no-repeat;
+    background-color: #eef1f4;
     background-attachment: fixed;
+    height: 100vh;
 }
 
-.bmw-logo {
+.bmw-logo-full-spec {
     position: absolute;
-    top: 25px;
-    right: 5%;
+    top: 10px;
+    right: 1%;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -38,45 +37,39 @@ body {
     background: transparent;
 }
 
-.bmw-logo img {
-    width: 350px;
+.bmw-logo-full-spec img {
+    width: 280px;
     height: auto;
-    object-fit: contain;
+    filter: drop-shadow(0px 0px 5px #286cfb);
 }
 
-.bmw-m8-title {
+.bmw-m8-full-spec {
     color: white;
     font-family: 'Russo One';
     font-size: 37px;
-    text-decoration: underline;
-    letter-spacing: 2px;
+    font-weight: lighter;
     position: absolute;
-    top: 170px;
-    right: 7.5%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 3px;
     padding: 10px;
     width: fit-content;
 }
 
-.bmw-m8-profile {
+.bmw-m8-detail-full-spec {
     color: white;
     font-family: 'Oswald';
-    font-size: 19px;
-    letter-spacing: 1px;
-    text-align: center;
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: absolute;
-    bottom: 90px;
-    right: 4%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
-    width: 25%;
+    bottom: 1%;
+    width: fit-content;
 }
 
-.bmw-m8-text-spec {
+.bmw-m8-fun-facts {
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -84,26 +77,25 @@ body {
     -webkit-backdrop-filter: blur(1px);
     color: white;
     font-family: 'Oswald';
-    font-size: 23px;
-    letter-spacing: 2px;
-    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
     position: absolute;
-    bottom: 30px;
-    right: 10%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    bottom: 3%;
+    right: 3%;
+    letter-spacing: 3px;
     padding: 10px;
-    cursor: pointer;
+    width: fit-content;
     transition: transform 0.3s;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.bmw-m8-text-spec:hover {
+.bmw-m8-fun-facts:hover {
     transform: scale(1.1);
 }
 
-.arrow-back-bmw-m8-profile {
+.arrow-back-bmw-m8-full-spec {
     width: 45px;
     height: 45px;
     margin-top: 10px;

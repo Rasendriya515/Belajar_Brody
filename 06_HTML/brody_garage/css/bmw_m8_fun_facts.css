@@ -1,0 +1,60 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%), 
+                      url("../../assets/images/BMW\ M8\ GTE\ \'19\ \(4\).jpg");
+    background-size: 100% auto;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-color: #eef1f4;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.bmw-m8-fun-facts-detail {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 1%;
+    width: fit-content;
+}
+
+.bmw-m8-fun-facts-title {
+    color: white;
+    font-family: 'Russo One';
+    font-size: 37px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 25%;
+    left: 2%;
+    letter-spacing: 3px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.arrow-back-bmw-m8-fun-facts {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 3px solid #BB271A;
+    border-radius: 50%;
+}
