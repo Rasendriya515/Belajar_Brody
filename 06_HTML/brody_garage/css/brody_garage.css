@@ -42,6 +42,20 @@ body img {
     margin-left: 40px;
 }
 
+.garage {
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Oswald';
+    color: white;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.garage:hover {
+    transform: scale(1.3);
+}
+
 .bmw-m8-container {
     position: absolute;
     bottom: 32px;
