@@ -131,9 +131,58 @@ body {
     margin: 0;
 }
 
-.arrow-back-bmw-m8-spec {
-    width: 45px;
-    height: 45px;
-    margin-top: 30px;
-    margin-left: 30px;
+.arrow-back-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-left: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 100;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow-back-container span {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    margin-left: 0;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.arrow-back-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 120px;
+}
+
+.arrow-back-container:hover span {
+    max-width: 120px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.arrow-back-container img {
+    border: 3px solid rgb(253, 110, 44);
+    border-radius: 50%;
+    background-color: rgb(188, 188, 188);
+    padding: 4px;
+    margin: 0;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
 }
