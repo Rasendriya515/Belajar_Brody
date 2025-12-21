@@ -15,24 +15,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 80%), 
-                      url("../../assets/images/BMW\ M8\ GTE\ \'19\ \(3\).jpg");
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0) 80%), 
+                      url("../../assets/images/Koenigsegg\ One\ \(8\).jpg");
     background-size: 100% auto;
-    background-position: center 24%;
+    background-position: center 125%;
     background-repeat: no-repeat;
     background-color: #eef1f4;
     background-attachment: fixed;
     height: 100vh;
 }
 
-.bmw-m8-spesification {
-    color: white;
+.koegnisegg-one-spesification {
+    color: rgb(255, 242, 237);
     font-family: 'Russo One';
     font-size: 37px;
     font-weight: lighter;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 200px;
+    bottom: 25%;
     left: 27%;
     transform: translateX(-50%);
     display: flex;
@@ -42,7 +42,7 @@ body {
     width: fit-content;
 }
 
-.bmw-m8-spec-full {
+.koegnisegg-one-spec-full {
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -54,8 +54,8 @@ body {
     font-weight: 400;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 230px;
-    left: 79%;
+    bottom: 30%;
+    right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,13 +66,13 @@ body {
     text-decoration: none;
 }
 
-.bmw-m8-spec-full:hover {
+.koegnisegg-one-spec-full:hover {
     transform: scale(1.1);
 }
 
-.bmw-m8-spec-logo {
+.koegnisegg-one-spec-logo {
     position: absolute;
-    top: 480px;
+    bottom: 15%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -82,7 +82,7 @@ body {
     align-items: center;
 }
 
-.bmw-m8-spec-logo img {
+.koegnisegg-one-spec-logo img {
     width: 5%;
     height: auto;
     object-fit: contain;
@@ -90,13 +90,13 @@ body {
     margin: 0 auto;
 }
 
-.bmw-m8-spec-name {
+.koegnisegg-one-spec-name {
     color: white;
     font-family: 'Russo One';
     text-transform: uppercase;
     font-size: 17px;
     position: absolute;
-    top: 575px;
+    bottom: 11%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -104,19 +104,19 @@ body {
     height: auto;
 }
 
-.bmw-m8-spec-name h2 {
+.koegnisegg-one-spec-name h2 {
     width: 20%;
     text-align: center;
     margin: 0;
     letter-spacing: 3px;
 }
 
-.bmw-m8-spec-name-detail {
+.koegnisegg-one-spec-name-detail {
     color: white;
     font-family: 'Oswald';
     font-size: 17px;
     position: absolute;
-    top: 610px;
+    bottom: 5%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -124,7 +124,7 @@ body {
     height: auto;
 }
 
-.bmw-m8-spec-name-detail h2 {
+.koegnisegg-one-spec-name-detail h2 {
     width: 20%;
     text-align: center;
     font-weight: 400;
@@ -134,7 +134,7 @@ body {
 
 .arrow-back-container {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50px;
     width: 50px;
     height: 50px;
@@ -158,7 +158,8 @@ body {
     max-width: 0;
     white-space: nowrap;
     margin-left: 0;
-    color: white;
+    color: #181818;
+    font-weight: 500;
     font-family: 'Oswald';
     font-size: 20px;
     letter-spacing: 1px;
@@ -167,11 +168,11 @@ body {
 
 .arrow-back-container:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    width: 120px;
+    width: 125px;
 }
 
 .arrow-back-container:hover span {
-    max-width: 120px;
+    max-width: 125px;
     opacity: 1;
     margin-left: 10px;
 }

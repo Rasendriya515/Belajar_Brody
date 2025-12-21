@@ -1,0 +1,107 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 70%), 
+                      url("../../assets/images/Koenigsegg\ One\ \(5\).jpg");
+    background-size: 100% auto;
+    background-position: center 130%;
+    background-repeat: no-repeat;
+    background-color: #eef1f4;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.koegnisegg-one-fun-facts-title  {
+    color: white;
+    font-family: 'Russo One';
+    font-size: 37px;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 30%;
+    left: 2%;
+    letter-spacing: 3px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.koegnisegg-one-fun-facts-detail {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 1%;
+    width: fit-content;
+}
+
+.arrow-back-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-left: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 100;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow-back-container span {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    margin-left: 0;
+    color: black;
+    font-family: 'Oswald';
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.arrow-back-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 210px;
+}
+
+.arrow-back-container:hover span {
+    max-width: 210px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.arrow-back-container img {
+    border: 3px solid rgb(253, 110, 44);
+    border-radius: 50%;
+    background-color: rgb(188, 188, 188);
+    padding: 4px;
+    margin: 0;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
