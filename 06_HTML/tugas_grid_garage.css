@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ffcc00;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}

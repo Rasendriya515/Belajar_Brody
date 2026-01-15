@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Russo One';
+    src: url('/06_HTML/assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+body h1 {
+    font-family: 'Russo One';
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(254, 114, 63);
+    text-shadow: 4px 4px 0px rgb(39, 9, 9);
+    text-align: center;
+}
+
+.member-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 5%;
+}
+
+.member-card-bronze {
+    border: 2px solid rgb(221, 129, 96);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 15px;
+    background-color: #2e2e2e;
+    transition: transform 0.3s;
+}
+
+.member-card-gold {
+    border: 1px solid rgb(221, 129, 96);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 15px;
+    background-color: #2e2e2e;
+    transition: transform 0.3s, background-color;
+}
+
+.member-card-silver {
+    border: 1px solid rgb(221, 129, 96);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 15px;
+    background-color: #2e2e2e;
+    transition: transform 0.3s;
+}
+
+.member-card-bronze:hover {
+    transform: scale(1.1);
+    background-color: rgb(146, 57, 57);
+    box-shadow: 2px 2px 6px rgb(241, 59, 59);
+    cursor: pointer;
+}
+
+.member-card-gold:hover {
+    transform: scale(1.2);
+    background-color: goldenrod;
+    box-shadow: 2px 2px 6px rgb(255, 188, 18);
+    cursor: pointer;
+}
+
+.member-card-silver:hover {
+    transform: scale(1.1);
+    background-color: silver;
+    box-shadow: 2px 2px 6px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
