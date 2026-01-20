@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container-parkiran {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px auto;
+    gap: 20px;
+    background-color: #ddd;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+.mobil {
+    background-color: greenyellow;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.truk-besar {
+    background-color: #FF5722;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    grid-column: 1 / 3;
+}

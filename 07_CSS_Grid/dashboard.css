@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 400px 80px;
+    grid-template-areas: 
+        "ndas ndas"
+        "pinggir konten"
+        "sikil sikil";
+    gap: 10px;
+    background-color: #ddd;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.header {
+    background-color: chocolate;
+    grid-area: ndas;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: yellowgreen;
+    grid-area: pinggir;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgb(98, 98, 199);
+    grid-area: konten;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: purple;
+    grid-area: sikil;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "ndas"
+            "konten"
+            "pinggir"
+            "sikil";
+    }
+}

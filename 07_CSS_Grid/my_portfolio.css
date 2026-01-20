@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 582px 50px;
+    background-color: white;
+}
+
+.portfolio-header, .portfolio-content, .portfolio-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-header {
+    grid-column: 2 / 3;
+}
+
+.portfolio-sidebar {
+    grid-row: 1 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.portfolio-content {
+    grid-column: 2 / 3;
+}
+
+.portfolio-footer {
+    grid-column: 2 / 3;
+}
+
+.my-profile {
+    border: 1px solid black;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-photo {
+    border: 1px solid wheat;
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.my-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.my-position {
+    font-size: 15px;
+}

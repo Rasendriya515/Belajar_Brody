@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    gap: 20px
+}
+
+.judul {
+    font-size: 40px;
+}
+
+#nama-barang {
+    border: 2px solid black;
+    background-color: rgb(183, 183, 183);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#catatan {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#catatan:hover {
+    transform: scale(1.03);
+}
+
+#daftar-barang {
+    font-size: 25px;
+    margin-right: 32px;
+}
+
+.list-barang {
+    color: green;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
